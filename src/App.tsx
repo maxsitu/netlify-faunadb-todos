@@ -1,6 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ItemList, { Item } from 'component/ItemList';
+
+const items = [{name: 'item a', isCompleted: true}, {name: 'item b', isCompleted: false}];
 
 function App() {
   return (
@@ -19,6 +22,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <ItemList items={items}></ItemList>
     </div>
   );
 }
