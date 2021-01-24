@@ -9,7 +9,7 @@ interface ItemListProps {
     items: Item[];
 }
 
-export default ({items}: ItemListProps) => (
+export const ItemList = ({items}: ItemListProps) => (
     <ul>
         {
             items.map(item => (
@@ -26,3 +26,5 @@ export default ({items}: ItemListProps) => (
         }
     </ul>
 );
+
+export default ItemList;

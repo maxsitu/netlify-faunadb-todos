@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import ItemList, { Item } from 'component/ItemList';
 
-const items = [{name: 'item a', isCompleted: true}, {name: 'item b', isCompleted: false}];
+const items: Item[] = [{name: 'item a', isCompleted: true}, {name: 'item b', isCompleted: false}];
 
 function App() {
   return (
